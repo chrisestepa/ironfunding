@@ -20,7 +20,7 @@ const campaigns = require('./routes/campaigns');
 const users = require('./routes/users');
 
 if (process.env.NODE_ENV === 'development') {
-  require('dotenv').config()
+  require('dotenv').config();
 }
 
 mongoose.connect(process.env.MONGO_URI);
